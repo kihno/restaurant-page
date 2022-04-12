@@ -7,13 +7,14 @@ const Home = (() => {
     function renderNavbar() {
         const navbar = document.createElement('ul');
 
-        const links = ['Home', 'Menu', 'Contact'];
+        const links = ['home', 'menu', 'contact'];
 
         navbar.setAttribute('id', 'navbar');
         for (let i = 0; i < links.length; i++) {
             const li = document.createElement('li');
 
             li.textContent = links[i];
+            li.setAttribute('id', `${links[i]}`)
             navbar.appendChild(li);
         }
 
@@ -22,20 +23,21 @@ const Home = (() => {
 
     function renderLogo() {
         const h1 = document.createElement('h1');
+        const p = document.createElement('p');
+        const container = document.createElement('div');
+
+        container.setAttribute('id', "logo");
 
         h1.textContent = 'Brekkie';
-        content.appendChild(h1);
-    }
-
-    function renderTagline() {
-        const p = document.createElement('p');
+        container.appendChild(h1);
 
         p.textContent = "It's never too late to start your day with a little Brekkie.";
-        content.appendChild(p);    
+        container.appendChild(p); 
+
+        content.appendChild(container);
     }
 
     renderNavbar();
     renderLogo();
-    renderTagline();
 })();
 

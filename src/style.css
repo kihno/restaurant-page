@@ -1,5 +1,52 @@
+@font-face {
+    font-family: 'semyonSoviet';
+    src: url('./SemyonSoviet.woff') format('woff'),
+        url('./SemyonSoviet.woff2') format('woff2');
+}
+
 body {
-    color: red;
+    color: white;
     background-image: url('./home-pancake.jpg');
     background-size: 100vw;
+}
+
+#content {
+    display: grid;
+    place-content: center;
+    gap: 80px;
+    width: 100vw;
+}
+
+#navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 100px;
+    list-style-type: none;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0a21d;
+}
+
+li {
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#logo {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+h1 {
+    margin: 0;
+    font-size: 100px;
+    font-family: 'semyonSoviet';
+}
+
+p{
+    margin: 0;
 }
