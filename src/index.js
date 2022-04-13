@@ -1,9 +1,10 @@
-import { renderHome, renderLogo, content } from './home.js';
+import { renderHome, renderLogo, content, renderNavbar } from './home.js';
 import { renderMenu } from './menu.js';
 import { renderContact } from './contact.js';
 import './style.css';
 
-renderHome();
+renderNavbar();
+renderContact();
 
 const homeLink = document.getElementById('home');
 const menuLink = document.getElementById('menu');
