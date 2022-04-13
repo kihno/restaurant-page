@@ -50,3 +50,9 @@ h1 {
 p{
     margin: 0;
 }
+
+#background {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
