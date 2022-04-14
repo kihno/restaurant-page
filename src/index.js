@@ -10,9 +10,7 @@ const menuLink = document.getElementById('menu');
 const contactLink = document.getElementById('contact');
 
 function clear() {
-    
-        content.removeChild(content.lastChild);
-    
+    content.removeChild(content.lastChild);
 }
 
 homeLink.addEventListener('click', () => {

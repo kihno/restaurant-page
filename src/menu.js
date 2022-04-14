@@ -65,8 +65,11 @@ const myMenu = [
 
 const background = document.createElement('div');
 const menuItems = document.createElement('div');
+background.setAttribute('id', 'background');
+menuItems.setAttribute('id', 'menuItems');
 
 function renderItem(item) {
+
     const div = document.createElement('div');
     div.className = 'item';
     menuItems.appendChild(div);
@@ -85,21 +88,28 @@ function renderItem(item) {
     }
 }
 
-function renderMenu() {
-    while (menuItems.firstChild) {
-        menuItems.removeChild(menuItems.firstChild);
-    }
-
-    background.setAttribute('id', 'background');
-    menuItems.setAttribute('id', 'menuItems');
-
+function renderHeading() {
     const h2 = document.createElement('h2');
     h2.textContent = 'Menu';
     h2.setAttribute('id', 'menuTitle');
     background.appendChild(h2);
+}
+
+function clearMenu() {
+    while (menuItems.firstChild) {
+        menuItems.removeChild(menuItems.firstChild);
+    }
+
+    while (background.firstChild) {
+        background.removeChild(background.firstChild);
+    }
+}
+
+function renderMenu() {
+    clearMenu();
+    renderHeading();
 
     background.appendChild(menuItems);
-
     content.appendChild(background);
 
     myMenu.forEach(item => {
