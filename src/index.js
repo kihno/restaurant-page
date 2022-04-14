@@ -3,8 +3,7 @@ import { renderMenu } from './menu.js';
 import { renderContact } from './contact.js';
 import './style.css';
 
-renderNavbar();
-renderMenu();
+renderHome();
 
 const homeLink = document.getElementById('home');
 const menuLink = document.getElementById('menu');
