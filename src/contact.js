@@ -22,6 +22,7 @@ function renderContact() {
             label.textContent = item + ':'
             label.setAttribute('for', item)
             textarea.setAttribute('id', item)
+            textarea.setAttribute('required', '')
             row.setAttribute('class', 'row')
 
             row.appendChild(label)
@@ -31,6 +32,7 @@ function renderContact() {
             label.textContent = item + ':'
             label.setAttribute('for', item)
             input.setAttribute('id', item)
+            input.setAttribute('required', '');
             row.setAttribute('class', 'row')
 
             row.appendChild(label)
@@ -45,6 +47,10 @@ function renderContact() {
     form.appendChild(button);
 
     content.appendChild(form);
+
+    form.addEventListener('submit', () => {
+        alert('Message successfully sent')
+    });
 }
 
 export { renderContact };

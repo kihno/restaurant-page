@@ -10,6 +10,8 @@ body {
     background-image: url('./home-pancake.jpg');
     background-size: 100vw;
     font-family: 'Roboto', sans-serif;
+    display: grid;
+    height: 100vh;
 }
 
 h1, h2, p, body, #navbar {
@@ -19,7 +21,8 @@ h1, h2, p, body, #navbar {
 
 #content {
     display: grid;
-    place-content: center;
+    justify-items: center;
+    align-items: start;
     gap: 80px;
     width: 100vw;
 }
@@ -46,6 +49,7 @@ li {
 #logo {
     display: grid;
     place-items: center;
+    width: 100%;
     padding-bottom: 20px;
     gap: 10px;
     background-color: rgba(0,0,0,0.5);
@@ -97,6 +101,7 @@ img {
 #form {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 20px;
     place-items: center;
     background-color: rgba(0,0,0,0.5);
@@ -126,7 +131,7 @@ img {
 button {
     cursor: pointer;
     justify-self: start;
-    margin-right: 22px;
+    margin-right: 20px;
     color: #e0a21d;
     background-color: rgba(0,0,0,0.3);
     border: 1px solid #e0a21d;
@@ -136,4 +141,10 @@ button {
 
 button:hover {
     background-color: rgba(0,0,0,1);
+}
+
+#footer {
+    margin-top: 10px;
+    text-align: center;
+    align-self: end;
 }
