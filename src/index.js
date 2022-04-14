@@ -4,7 +4,7 @@ import { renderContact } from './contact.js';
 import './style.css';
 
 renderNavbar();
-renderContact();
+renderMenu();
 
 const homeLink = document.getElementById('home');
 const menuLink = document.getElementById('menu');
