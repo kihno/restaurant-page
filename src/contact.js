@@ -1,4 +1,4 @@
-import {content, renderNavbar } from './home.js';
+import { content } from './home.js';
 
 function renderContact() {
     // renderNavbar();

@@ -123,4 +123,4 @@ function renderMenu() {
     });
 }
 
-export { renderMenu };
+export { renderMenu, Coffee, Oj, Eggs, Sando, Pancakes, FrenchToast };

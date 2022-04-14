@@ -1,5 +1,5 @@
 import { renderHome, renderLogo, content, renderNavbar } from './home.js';
-import { renderMenu } from './menu.js';
+import { renderMenu, Coffee, Oj, Eggs, Sando, Pancakes, FrenchToast } from './menu.js';
 import { renderContact } from './contact.js';
 import './style.css';
 
