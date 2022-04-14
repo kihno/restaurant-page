@@ -1,26 +1,32 @@
 import { content } from "./home.js";
+import  Coffee from './coffee.jpg';
+import  Oj from './oj.jpg';
+import  Eggs from './eggs.jpg';
+import  Sando from './sando.jpg';
+import  Pancakes from './pancakes.jpg';
+import  FrenchToast from './frenchToast.jpg';
 
 const coffee = new Image();
-coffee.src = '../src/coffee.jpg';
+coffee.src = Coffee;
 
 const oj = new Image();
-oj.src = '../src/oj.jpg';
+oj.src = Oj;
 
 
 const eggs = new Image();
-eggs.src = '../src/eggs.jpg';
+eggs.src = Eggs;
 
 
 const sando = new Image();
-sando.src = '../src/sando.jpg';
+sando.src = Sando;
 
 
 const pancakes = new Image();
-pancakes.src = '../src/pancakes.jpg';
+pancakes.src = Pancakes;
 
 
 const frenchToast = new Image();
-frenchToast.src = '../src/frenchToast.jpg';
+frenchToast.src = FrenchToast;
 
 const myMenu = [
     {
