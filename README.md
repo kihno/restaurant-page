@@ -1,6 +1,25 @@
-# restaurant-page
+# Restaurant Page
 
-Restaurant mock-up page made with DOM elements created exclusively through javascript.
+![](src/restaurant.png)
+
+https://kihno.github.io/restaurant-page/
+
+## Description
+
+A single page restaurant mock-up made with webpack.
+
+## Built With
+
+- Webpack
+- Javascript
+
+## Features
+
+- All HTML is generated through javascript
+
+## Acknowledgements
+
+Built as part of [The Odin Project](https://www.theodinproject.com/) full stack curriculm.
 
 Photo Credits:
 
